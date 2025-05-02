@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 3 - Quiz & Joke</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Quiz & Joke Generator</h1>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section class="quiz">
+      <h2>Interactive Quiz</h2>
+      <div id="question-container">
+        <p id="question">Loading...</p>
+        <div id="options"></div>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+      <p id="score"></p>
+    </section>
+
+    <!-- API Fetch Section -->
+    <section class="api">
+      <h2>Joke Generator</h2>
+      <button onclick="fetchJoke()">Get a Joke</button>
+      <p id="joke"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
